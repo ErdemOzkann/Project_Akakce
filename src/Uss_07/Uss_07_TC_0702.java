@@ -2,14 +2,13 @@ package Uss_07;
 
 import Uss_05.BaseDriver.BaseDriver;
 import Uss_05.BaseDriver.MyFunc;
-import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class Uss_07_TC_0701 extends BaseDriver {
+public class Uss_07_TC_0702 extends BaseDriver {
     @Test
-    public void US_07_TC_0701() {
+    public void US_07_TC_0702() {
         driver.get("https://www.akakce.com/");
 
         WebElement GirisYap= driver.findElement(By.cssSelector("div[id='H_rl_v8'] a+a"));
@@ -32,16 +31,11 @@ public class Uss_07_TC_0701 extends BaseDriver {
         WebElement hesabimiSil= driver.findElement(By.xpath("//ul[@id='AL']/li[4]/a[4]"));
         hesabimiSil.click();
 
-        WebElement HesapSilYanlisSifre= driver.findElement(By.xpath("//div[@id='content']/form/span/label/following-sibling::input"));
-        HesapSilYanlisSifre.sendKeys("Password122");
+        WebElement HesapSilmeSifresi = driver.findElement(By.xpath("//div[@id='content']/form/span/label/following-sibling::input"));
+        HesapSilmeSifresi.sendKeys("Password123");
 
         WebElement hesabimisil2= driver.findElement(By.xpath("//*[@id='content']/form/span/following-sibling::span/input"));
         hesabimisil2.click();
-
-        MyFunc.Bekle(2);
-
-        WebElement SifreniziKontrolEdiniz= driver.findElement(By.xpath("//*[@class='alertX t2']/p"));
-        Assert.assertTrue("Bir islem hatasi olustu!!!", SifreniziKontrolEdiniz.getText().contains("Mevcut şifrenizi doğru girdiğinizden emin olun."));
 
 
         BekleKapat();
