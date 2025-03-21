@@ -1,6 +1,7 @@
 package Uss_04;
 
-import Utility.BaseDriver;
+
+import Uss_02.Utility.BaseDriver;
 import Utility.MyFunc;
 import org.junit.Test;
 import org.openqa.selenium.By;
