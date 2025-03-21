@@ -9,17 +9,15 @@ import org.openqa.selenium.WebElement;
 public class Uss_01_TC_0101 extends BaseDriver {
 
 
-
-
     @Test
-    public void Uss_01_TC_0101(){
+    public void Uss_01_TC_0101() {
 
         driver.get("https://www.akakce.com/");
 
-        WebElement hesapAc= driver.findElement(By.cssSelector("[id=H_rl_v8] :nth-child(1)"));
+        WebElement hesapAc = driver.findElement(By.cssSelector("[id=H_rl_v8] :nth-child(1)"));
         hesapAc.click();
 
-        WebElement ad= driver.findElement(By.cssSelector("[id=FrmRnuS] :nth-child(5) :nth-child(1)"));
+        WebElement ad = driver.findElement(By.cssSelector("[id=FrmRnuS] :nth-child(5) :nth-child(1)"));
         ad.sendKeys("TestUser");
 
 
@@ -41,29 +39,25 @@ public class Uss_01_TC_0101 extends BaseDriver {
         WebElement gender = driver.findElement(By.cssSelector("[id=FrmRnuS] :nth-child(17) :nth-child(2) input"));
         gender.click();
 
-        WebElement gun=driver.findElement(By.cssSelector("[class=select_h_v8] :nth-child(1) select :nth-child(11)"));
+        WebElement gun = driver.findElement(By.cssSelector("[class=select_h_v8] :nth-child(1) select :nth-child(11)"));
         gun.click();
 
-        WebElement ay =driver.findElement(By.cssSelector("[class=select_h_v8] :nth-child(2) select :nth-child(11)"));
+        WebElement ay = driver.findElement(By.cssSelector("[class=select_h_v8] :nth-child(2) select :nth-child(11)"));
         ay.click();
 
-        WebElement yil =driver.findElement(By.cssSelector("[class=select_h_v8] :nth-child(3) select :nth-child(18)"));
+        WebElement yil = driver.findElement(By.cssSelector("[class=select_h_v8] :nth-child(3) select :nth-child(18)"));
         yil.click();
 
-        WebElement checkbox=driver.findElement(By.cssSelector("[class=chbx_v8] :nth-child(1) input"));
+        WebElement checkbox = driver.findElement(By.cssSelector("[class=chbx_v8] :nth-child(1) input"));
         checkbox.click();
 
-        WebElement hesapac =driver.findElement(By.xpath("(//*[@type='checkbox'])[2] "));
+        WebElement hesapac = driver.findElement(By.xpath("(//*[@type='checkbox'])[2] "));
         hesapac.click();
 
         BekleKapat();
 
 
     }
-
-
-
-
 
 
 }
