@@ -1,4 +1,4 @@
-package Uss_03_TC_0301;
+package Uss_03.Utility;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

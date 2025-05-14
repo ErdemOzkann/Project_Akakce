@@ -1,4 +1,4 @@
-package Uss_03_TC_0301;
+package Uss_03.Utility;
 
 public class MyFunc {
     public static void bekle(int sayiye){

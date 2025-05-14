@@ -1,10 +1,11 @@
-package Uss_03_TC_0301;
+package Uss_03;
 
+import Uss_03.Utility.BaseDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.junit.Test;
 
-public class Uss_03 extends BaseDriver {
+public class Uss_03_TC_0301 extends BaseDriver {
 
     @Test
 
